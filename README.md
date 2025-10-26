@@ -11,9 +11,7 @@ Este projeto demonstra a implementação de um CRUD completo, autenticação via
 ## 🎨 Visualização
 
 
-<div align="center">
- <img src="./gif/gif.gif" alt="Demonstração do Node Random em Ação" width="700">
-</div>
+![Demo do Projeto](gif/gif.gif)
 
 ## 📋 Índice
 
