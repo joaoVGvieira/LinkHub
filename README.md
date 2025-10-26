@@ -1,59 +1,52 @@
-# LinkHub 🚀
+# LinkHub
 
 ![PHP Version](https://img.shields.io/badge/PHP-8.2.12-777BB4)
 ![Laravel Version](https://img.shields.io/badge/Laravel-12.35.1-FF2D20)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Um gerenciador de links moderno e responsivo, construído com a robustez do Laravel 12 e um design frontend arrojado usando Tailwind CSS e efeitos de Glass Morphism.
+LinkHub é um projeto de gerenciador de links pessoais. Ele foi desenvolvido como um estudo prático de Laravel 12, focado em criar uma aplicação completa com backend robusto e um frontend moderno.
 
-Este projeto demonstra a implementação de um CRUD completo, autenticação via Laravel Sanctum e uma API RESTful, tudo envolto em uma interface de usuário interativa e visualmente atraente.
-
-## 🎨 Visualização
-
-
-![Demo do Projeto](gif/gif.gif)
+O sistema permite que usuários se cadastrem, gerenciem seus links e, opcionalmente, interajam com eles através de uma API RESTful protegida.
 
 ## 📋 Índice
 
-- [✨ Funcionalidades Principais](#-funcionalidades-principais)
-- [🛠️ Stack de Tecnologias](#️-stack-de-tecnologias)
-- [🚀 Começando](#-começando)
+- [Principais Funcionalidades](#principais-funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Executar o Projeto](#como-executar-o-projeto)
   - [Pré-requisitos](#pré-requisitos)
   - [Instalação](#instalação)
-- [🔌 Endpoints da API (Exemplo)](#-endpoints-da-api-exemplo)
-- [🏛️ Arquitetura e Padrões](#️-arquitetura-e-padrões)
-- [📄 Licença](#-licença)
+- [Documentação da API](#documentação-da-api)
+- [Arquitetura e Padrões](#arquitetura-e-padrões)
+- [Licença](#licença)
 
-## ✨ Funcionalidades Principais
+## Principais Funcionalidades
 
-- **Autenticação Segura:** Sistema completo de login e registro com Laravel Auth e Sanctum.
-- **CRUD Completo:** Gerenciamento total (Criar, Ler, Atualizar, Deletar) de links.
-- **API RESTful:** Endpoints de API para gerenciar os links de forma programática.
-- **Design Moderno:** Interface com efeito "Glass Morphism", gradientes animados e tipografia moderna (Google Fonts - Inter).
-- **Totalmente Responsivo:** Design Mobile-First que se adapta perfeitamente a qualquer tamanho de tela.
-- **Validação Robusta:** Validação de formulários customizada no backend e frontend.
-- **UI Interativa:** Animações suaves de hover/focus e elementos interativos.
+- **Autenticação de Usuários:** Sistema completo de registro e login.
+- **Gerenciamento de Links:** Funcionalidades CRUD (Criar, Ler, Atualizar, Deletar) para os links do usuário.
+- **API RESTful:** Endpoints de API (protegidos com Laravel Sanctum) para interações programáticas.
+- **Design Responsivo:** Interface construída com a abordagem Mobile-First, garantindo usabilidade em desktops e celulares.
+- **Validação de Dados:** Regras de validação robustas no backend para garantir a integridade dos dados.
 
-## 🛠️ Stack de Tecnologias
+## Tecnologias Utilizadas
 
-Esta é a stack completa utilizada no projeto:
+O projeto foi construído com as seguintes ferramentas:
 
 ### Backend
 - **PHP:** 8.2.12
 - **Framework:** Laravel 12.35.1
 - **Banco de Dados:** MySQL com Eloquent ORM
-- **Autenticação:** Laravel Sanctum & Auth (com CSRF Protection)
+- **Autenticação:** Laravel Sanctum & Autenticação nativa do Laravel (com proteção CSRF)
 - **Ferramentas:** Artisan CLI, Migrations, Eloquent Relationships
 
 ### Frontend
 - **Template Engine:** Blade
 - **Estilização:** Tailwind CSS (Utility-First)
-- **Design:** CSS Custom com Variáveis, Efeitos Glass (backdrop-filter)
+- **Design:** CSS customizado com variáveis, efeitos de "Glass Morphism" (backdrop-filter) e gradientes.
 - **Ícones & Fontes:** Font Awesome 6.4.0, Google Fonts (Inter)
 
-## 🚀 Começando
+## Como Executar o Projeto
 
-Siga estas instruções para obter uma cópia local do projeto em funcionamento.
+Siga os passos abaixo para configurar o ambiente e executar o projeto localmente.
 
 ### Pré-requisitos
 
@@ -66,8 +59,8 @@ Siga estas instruções para obter uma cópia local do projeto em funcionamento.
 
 1.  **Clone o repositório:**
     ```sh
-    git clone [https://github.com/joaoVGvieira/LinkHub.git)
-    cd linkhub
+    git clone [https://github.com/joaoVGvieira/LinkHub.git](https://github.com/joaoVGvieira/LinkHub.git)
+    cd LinkHub
     ```
 
 2.  **Instale as dependências do PHP (Composer):**
@@ -81,7 +74,7 @@ Siga estas instruções para obter uma cópia local do projeto em funcionamento.
     ```
 
 4.  **Configure seu ambiente:**
-    Copie o arquivo de exemplo `.env.example` para `.env`.
+    (Copie o arquivo `.env.example` para `.env`)
     ```sh
     cp .env.example .env
     ```
@@ -97,19 +90,19 @@ Siga estas instruções para obter uma cópia local do projeto em funcionamento.
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=nome_do_seu_banco
-    DB_USERNAME=seu_usuario
-    DB_PASSWORD=sua_senha
+    DB_DATABASE=linkhub_db
+    DB_USERNAME=root
+    DB_PASSWORD=
     ```
 
 7.  **Execute as Migrations:**
-    Para criar as tabelas no banco de dados.
+    (Para criar as tabelas no banco de dados)
     ```sh
     php artisan migrate
     ```
 
 8.  **Compile os Assets:**
-    Compile os arquivos Tailwind CSS e JavaScript.
+    (Compile os arquivos Tailwind CSS e JavaScript)
     ```sh
     npm run dev
     ```
@@ -119,9 +112,9 @@ Siga estas instruções para obter uma cópia local do projeto em funcionamento.
     php artisan serve
     ```
 
-Agora você pode acessar o projeto em `http://localhost:8000`!
+Após esses passos, o projeto estará acessível em `http://localhost:8000`.
 
-## 🔌 Endpoints da API (Exemplo)
+## Documentação da API
 
 O projeto utiliza Laravel Sanctum para autenticação de API. Todos os endpoints estão prefixados com `/api/`.
 
@@ -133,15 +126,15 @@ O projeto utiliza Laravel Sanctum para autenticação de API. Todos os endpoints
 | `PUT/PATCH` | `/api/links/{id}` | Atualiza um link. |
 | `DELETE` | `/api/links/{id}` | Deleta um link. |
 
-## 🏛️ Arquitetura e Padrões
+## Arquitetura e Padrões
 
 - **MVC (Model-View-Controller)**: Separação clara de responsabilidades.
 - **Resource Controllers**: Controllers otimizados para operações CRUD.
-- **Middleware**: Utilizado para proteção de rotas e autenticação (Auth & Sanctum).
-- **Eloquent ORM**: Mapeamento objeto-relacional para interações fluentes com o banco de dados.
+- **Middleware**: Utilizado para proteção de rotas e autenticação.
+- **Eloquent ORM**: Mapeamento objeto-relacional para interações com o banco de dados.
 - **Database Migrations**: Controle de versão do schema do banco de dados.
-- **Form Request Validation**: Validação de dados de formulário desacoplada dos controllers.
+- **Form Request Validation**: Validação de dados desacoplada dos controllers.
 
-## 📄 Licença
+## Licença
 
 Distribuído sob a Licença MIT. Veja `LICENSE` para mais informações.
