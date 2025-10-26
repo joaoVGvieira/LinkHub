@@ -66,7 +66,7 @@ Siga estas instruções para obter uma cópia local do projeto em funcionamento.
 
 1.  **Clone o repositório:**
     ```sh
-    git clone [https://github.com/seu-usuario/nome-do-projeto.git](https://github.com/seu-usuario/nome-do-projeto.git)
+    git clone [https://github.com/joaoVGvieira/LinkHub.git)
     cd linkhub
     ```
 
